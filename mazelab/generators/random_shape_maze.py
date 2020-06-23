@@ -15,4 +15,4 @@ def random_shape_maze(width, height, max_shapes, max_size, allow_overlap, shape=
     x[:, 0] = 1
     x[:, -1] = 1
     
-    return x
+    return np.asarray(x, dtype=np.float32)

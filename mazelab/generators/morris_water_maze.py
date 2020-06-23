@@ -4,7 +4,7 @@ from skimage.draw import circle
 
 
 def morris_water_maze(radius, platform_center, platform_radius):
-    x = np.ones([2*radius, 2*radius], dtype=np.uint8)
+    x = np.ones([2*radius, 2*radius], dtype=np.float32)
     
     rr, cc = circle(radius, radius, radius - 1)
     x[rr, cc] = 0
